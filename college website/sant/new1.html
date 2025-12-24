@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contact-us{
+    width: 80%;
+    margin: auto;
+}
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+    margin: 10px;;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    margin: 10px;
+    margin-left: 40px;
+    padding-left: 120px;
+}
+.contact-col div p{
+    padding: 0;
+    margin-right: 30px
+}
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+    </style>
+</head>
+<body>
+    <section class="contact=us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <span>
+                        <h5>XYZ Road, ABC building</h5>
+                        <p>Gingee, Villupuram</p>
+                    </span>
+                </div>
+    
+                <div>
+                    <span>
+                        <h5>Ph.no: 99999 99999</h5>
+                        <p>Monday to Saturday,, 10Am to 6Pm</p>
+                    </span>
+                </div>
+    
+                <div>
+                    <span>
+                        <h5>info@mywebsite.com</h5>
+                        <p>Email Qs Your Query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+    
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter your Name" required>
+                    <input type="email" name="email" placeholder="Enter Email Address" required>
+                    <input type="text" name="subject" placeholder="Enter your Subject" required>
+                    <textarea  rows="8" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+    
+    
+    
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
